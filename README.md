@@ -1,4 +1,4 @@
-# AI Practice Projects
+# AI Algorithms
 
 
 This repository presents a collection of AI practice projects created as a byproduct of the learning process, demonstrating the implementation of various artificial intelligence systems and algorithms. These projects are designed to serve as study materials and reference guides for understanding different AI techniques. For more details on each algorithm, please refer to the README file in the corresponding folder.
