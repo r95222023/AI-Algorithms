@@ -7,7 +7,7 @@ from DecisionTree import DecisionLeaf, DecisionTree
 
 
 def DecisionTreeLearner(dataset):
-    """Algorithm follows Figure 18.5"""
+    """Algorithm follows Figure 18.5 of `AI a modern approach 3rd edition`"""
     target, values, attr_names = dataset.target, dataset.values, dataset.attr_names
     target_attr_name = attr_names[target]
 

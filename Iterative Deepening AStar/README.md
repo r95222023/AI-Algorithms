@@ -1,12 +1,17 @@
-# A* Algorithm Implementation
+Here’s a description for an Iterative Deepening A* (IDA*) algorithm implementation:
 
-This folder includes an implementation of the A* algorithm for solving the n-puzzle problem. The A* algorithm is a well-known pathfinding and graph traversal technique widely used in computer science, particularly in artificial intelligence and robotics, to determine the shortest path between two points.
+---
+
+# IDA* Algorithm Implementation
+
+This folder includes an implementation of the Iterative Deepening A* (IDA*) algorithm for solving the n-puzzle problem. IDA* is an advanced pathfinding and graph traversal technique that combines the benefits of both depth-first search and A* to find the shortest path between two points.
 
 ## Features
 
-- **A* Algorithm**: Efficiently finds the shortest path from a start state to a goal state using heuristics.
-- **Heuristic Functions**: Supports multiple heuristic functions, such as Manhattan Distance and Misplacement Tiles, for guiding the search.
-- **Customizable**: Easy to modify and extend with additional heuristics or features.
+- **IDA* Algorithm**: Efficiently searches for the shortest path from a start state to a goal state using a combination of depth-first search and heuristic-based evaluation.
+- **Heuristic Functions**: Supports various heuristic functions, such as Manhattan Distance and Misplacement Tiles, to guide the search process.
+- **Bounded Search**: Iteratively deepens the search with increasing bounds based on the heuristic value, optimizing memory usage and search efficiency.
+- **Customizable**: Easily extendable to include additional heuristics or modify search parameters for enhanced performance.
 
 ## N-Puzzle Problem
 The n-puzzle is a classic puzzle consisting of a grid with `n` numbered tiles and one empty space. The objective is to rearrange the tiles by sliding them into the empty space to reach a specific goal configuration, typically with the tiles ordered numerically. As the grid size increases, the puzzle's complexity also increases, making it an excellent test case for algorithms like A*.
@@ -54,24 +59,19 @@ Here, `0` represents the empty space. In a 2D grid format, this looks like:
 ```python
 Import the AStar class and use solve method. For example,
 
-from AStar import AStar
+from IdAStar import IdAStar
 from HeuristicFunction import ManhattanDistance, MisplacementTiles
 
 puzzle = [1, 3, 6, 4, 9, 5, 2, 7, 0, 10, 11, 12, 13, 14, 8, 15]
 
-a_star = AStar(ManhattanDistance())
-# AStar(MisplacementTiles()) for Misplacement Tiles
+ida = IdAStar(heuristic=ManhattanDistance())
+# IdAStar(heuristic=MisplacementTiles()) for Misplacement Tiles
 
-solution = a_star.solve(puzzle)
+solution = ida.solve(puzzle)
 print('Solution:', solution['steps'])
+    
 ```
     
 To execute the program, use the following command:
 
 `python run.py`
-
-For full featured playable program, move to 'full' directory and run with:
-   
-`python run.py`
-
-This version provides CLI interface and user can use various algorithm or different heuristic functions.
