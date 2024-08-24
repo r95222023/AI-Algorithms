@@ -1,7 +1,3 @@
-Here's a README based on the provided code:
-
----
-
 # ResNet50 Implementation in TensorFlow/Keras
 
 This repository contains an implementation of the ResNet50 architecture using TensorFlow and Keras. ResNet50 is a popular deep convolutional neural network architecture known for its ability to train very deep networks by utilizing residual connections.

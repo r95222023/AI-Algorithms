@@ -36,12 +36,10 @@ def initialize_adam(parameters) :
     
     # Initialize v, s. Input: "parameters". Outputs: "v, s".
     for l in range(L):
-    ### START CODE HERE ### (approx. 4 lines)
         v["dW" + str(l+1)] = np.zeros(parameters["W" + str(l+1)].shape)
         v["db" + str(l+1)] = np.zeros(parameters["b" + str(l+1)].shape)
         s["dW" + str(l+1)] = np.zeros(parameters["W" + str(l+1)].shape)
         s["db" + str(l+1)] = np.zeros(parameters["b" + str(l+1)].shape)
-    ### END CODE HERE ###
     
     return v, s
 
