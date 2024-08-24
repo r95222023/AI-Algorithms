@@ -32,7 +32,7 @@ pip install tensorflow numpy
 To use the ResNet50 model, you can import it and create an instance of the model with your desired input shape and number of classes.
 
 ```python
-from resnet import ResNet50
+from residual_networks import ResNet50
 
 # Define the model
 model = ResNet50(input_shape=(64, 64, 3), classes=6)
