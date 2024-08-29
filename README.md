@@ -1,5 +1,8 @@
 # AI Algorithms
-![Neural Network](/neural-network.jpeg?raw=true "Neural Network")
+<img align="center" style="width:50%" src="neural-network.jpeg" alt="...">
+
+<!-- 
+![Neural Network](/neural-network.jpeg?raw=true "Neural Network") -->
 This repository showcases a collection of AI practice projects that demonstrate the implementation of various artificial intelligence systems and algorithms. These projects are intended to serve as study materials and reference guides for understanding different AI techniques. For detailed information on each algorithm, please refer to the README file in the corresponding folder.
 
 ## Contents
