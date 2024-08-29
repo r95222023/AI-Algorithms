@@ -1,5 +1,8 @@
 # AI Algorithms
+<p align="center">
 <img align="center" style="width:50%" src="neural-network.jpeg" alt="...">
+</p>
+
 
 <!-- 
 ![Neural Network](/neural-network.jpeg?raw=true "Neural Network") -->
